@@ -1,0 +1,1 @@
+# mongo-php-driver-issue-1506
