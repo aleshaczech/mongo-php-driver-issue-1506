@@ -1,0 +1,10 @@
+{
+    "name": "aleshaczech/mongo-php-driver-issue-1506",
+    "description": "https://github.com/mongodb/mongo-php-driver/issues/1506",
+    "require": {
+        "php": "^8.3",
+        "ext-mongodb": "*",
+        "mongodb/mongodb": "^1.17",
+        "vishnubob/wait-for-it": "dev-master"
+    }
+}

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  test:
+    build:
+      context: .
+    environment:
+      APP_MONGO_CONN_URI: "mongodb://root:toor@mongodb:27017/admin?appName=test&connectTimeoutMS=30000"
+      APP_MONGO_DB: "admin"
+
+  mongodb:
+    image: mongo:7.0.4
+    hostname: "mongodb"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "root"
+      MONGO_INITDB_ROOT_PASSWORD: "toor"
+
